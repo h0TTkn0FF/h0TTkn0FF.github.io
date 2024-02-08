@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(Raleway-VariableFont_wght.ttf) format('truetype'),
+         local('Raleway-VariableFont_wght');
+}
+
+@font-face {
+    font-family: 'SourceCodePro';
+    src: url(SourceCodePro-VariableFont_wght.ttf) format('truetype'),
+         local('SourceCodePro-VariableFont_wght');
+}
