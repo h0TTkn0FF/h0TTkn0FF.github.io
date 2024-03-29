@@ -1,0 +1,11 @@
+@media (width <= 800px) {
+  .footer {
+    padding: 0;
+  }
+}
+
+@media (width <= 425px) {
+  .map {
+    width: 100%;
+  }
+}

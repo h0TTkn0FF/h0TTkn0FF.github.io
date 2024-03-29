@@ -3,15 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Simon Myshinskiy</title>
-		<link rel="icon" href="./images/favicon.svg">
+		<link rel="icon" href="./svg/favicon.svg" sizes="any" type="image/svg+xml">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Немного о себе">
         <link rel="stylesheet" href="./fonts/font.css">
+        <link rel="stylesheet" href="./styles/animation.css">
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/adaptive.css">
 	</head>
     <body>
         <header class="header">
-            <img src="./images/favicon.png" srcset="./images/logo.svg 1x" alt="логотип" class="logo">
+            <svg viewBox="0 0 24 24" height="250" width="250" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="header__logo">
+                <use xlink:href="./svg/logo.svg#logo" />
+            </svg>
         </header>
         <main class="main">
             <section class="portf">
@@ -23,7 +27,7 @@
                             <p class="card__list-item-text">
                                 Это мой первый проект из курса. Проект выполненый для смартфонов. Без адаптации к компьютерам, ноутбукам и планшетам.
                             </p>
-                            <p class="card__list-item-text">Ссылка на <a href="https://github.com/h0TTkn0FF/s-chistogo-lista" target="_blank">GitHub репозиторий</a>.</p>
+                            <p class="card__list-item-text">Ссылка на <a class="link" href="https://github.com/h0TTkn0FF/s-chistogo-lista" target="_blank">GitHub репозиторий</a>.</p>
                         </article>
                     </li>
                     <li class="card__list-item proj2">
@@ -32,39 +36,42 @@
                             <p class="card__list-item-text">
                                 Второй проект, выполненный уже под декстопную версию браузера. На тот момент было не просто справиться с некоторыми задачами.
                             </p>
-                            <p class="card__list-item-text">Ссылка на <a href="https://github.com/h0TTkn0FF/ono-tebe-nado" target="_blank">GitHub репозиторий</a>.</p>
+                            <p class="card__list-item-text">Ссылка на <a class="link" href="https://github.com/h0TTkn0FF/ono-tebe-nado" target="_blank">GitHub репозиторий</a>.</p>
                         </article>
                     </li>
                     <li class="card__list-item proj3">
                         <article class="card__list-item-description">
                             <h2 class="card__list-item-title">Надо сделать идеально</h2>
                             <p class="card__list-item-text">Неплохой опыт работы с видео.</p>
-                            <p class="card__list-item-text">Ссылка на <a href="https://github.com/h0TTkn0FF/nado_sdelat_idealno" target="_blank" >GitHub репозиторий</a>.</p>
+                            <p class="card__list-item-text">Ссылка на <a class="link" href="https://github.com/h0TTkn0FF/nado_sdelat_idealno" target="_blank" >GitHub репозиторий</a>.</p>
                         </article>
                     </li>
                     <li class="card__list-item proj4">
                         <article class="card__list-item-description">
                             <h2 class="card__list-item-title">Посмотри в окно</h2>
-                            <p class="card__list-item-text">Взгляд по ту сторону.</p>
-                            <p class="card__list-item-text">Ссылка на <a href="https://github.com/h0TTkn0FF/posmotri_v_okno" target="_blank" >GitHub репозиторий</a>.</p>
+                            <p class="card__list-item-text">Отличный опыт работы с чекбоксами и полями для заполнения.</p>
+                            <p class="card__list-item-text">Ссылка на <a class="link" href="https://github.com/h0TTkn0FF/posmotri_v_okno" target="_blank" >GitHub репозиторий</a>.</p>
                         </article>
                     </li>
                     <li class="card__list-item proj5">
                         <article class="card__list-item-description">
                             <h2 class="card__list-item-title">Карты подскажут</h2>
                             <p class="card__list-item-text">В данном проекте была проведена работа по оформлению текста, а так же адапатация под мобильные устройства.</p>
-                            <p class="card__list-item-text">Ссылка на <a href="https://github.com/h0TTkn0FF/karty-podskazhut" target="_blank" >GitHub репозиторий</a>.</p>
+                            <p class="card__list-item-text">Ссылка на <a class="link" href="https://github.com/h0TTkn0FF/karty-podskazhut" target="_blank" >GitHub репозиторий</a>.</p>
                         </article>
                     </li>
                 </ul>
                 <p class="portf__description">
                     Приведённые выше работы были проверены специалистами. Так же по ссылкам вы можете их скачать и посмотреть на открытый код.
                 </p>
+                <p class="about__text">
+                    <a class="link" href="https://github.com/h0TTkn0FF?tab=repositories">Тут можно просмотреть все остальне работы</a> 
+                </p>
             </section>
             <section class="about">
                 <h1 class="title">Немного о себе</h1>
-                <article class="about__block">
-                    <p class="about__text">Живу в России, а именно в городе Гатчина, Лнинградская Область. По жизни люблю что-то создавать.
+                <article class="about__section">
+                    <p class="about__text">Живу в России, а именно в городе Гатчина, Ленинградская Область. По жизни люблю что-то создавать.
                         В детстве очень любил конструктор LEGO, думаю от того и пошла любовь к созданию.</p>
                     <p class="about__text">В один момент очень сильно заинтересовало создание сайтов, как и почему работают определённые
                         штучки, крутилки и кнопки. С начала всё началось с обычной кнопки F12, ну а дальше понеслось. Начал изучать верстку сайтов с нуля сам, через кучу роликов и познавательных сайтов. Всё шло достаточно
@@ -87,34 +94,21 @@
             </blockquote>
         </main>
         <footer class="footer">
+            <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A539d0e77bb118dc1e6ec84267a068813b78338c3400f79b3452f66c21a6f650b&amp;source=constructor" frameborder="0"></iframe>
             <nav class="social">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A539d0e77bb118dc1e6ec84267a068813b78338c3400f79b3452f66c21a6f650b&amp;source=constructor" frameborder="0"></iframe>
-                <ul class="social__link">
+                <ul class="social__list">
                     <li class="social__link-item">
-                        <a href="https://vk.com/hottknoff">
-                            <img src="./icons/vk.svg" alt="ВК">
+                        <a class="link" href="https://vk.com/hottknoff" target="_blank">
+                            <span class="accent-text">@hottknoff</span>
                         </a>
                     </li>
                     <li class="social__link-item">
-                        <a href="mailto:mcwolfe@mail.ru">
-                            <img src="./icons/mail.svg" alt="Почта">
+                        <a class="link" href="mailto:mcwolfe@mail.ru">
+                            <span class="accent-text">mcwolfe@mail.ru</span>
                         </a>
                     </li>
                     <li class="social__link-item">
-                        <a href="">
-                            <img src="" alt="">
-                        </a>
-                    </li>
-                    <li class="social__link-item">
-                        <a href="">
-                            <img src="" alt="">
-                        </a>
-                    </li>
-                    <li class="social__link-item">
-                        <a href="" id="noncall" class="tel">
-                            <img src="./icons/tel.svg" alt="Телефон">
-                            <span class="accent-text">8 (999) 218 39-39</span>
-                        </a>
+                        <span class="accent-text">8(999)218 39-39</span>
                     </li>
                 </ul>
             </nav>
